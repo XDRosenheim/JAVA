@@ -28,7 +28,7 @@ public class HelloWorld {
 		
 		// TODO Parameter, pointer, constant/const
 		// Parameter - Methods
-		// const - Variable can't change.
+		// const - variable can't change.
 		
 	}
 }

@@ -27,8 +27,7 @@ public class HelloWorld {
 		// Priavte, local and global variables - Aka. Scope
 		
 		// TODO Parameter, pointer, constant/const
-		// Parameter - Methods
-		// const - Variable can't change.
+		// Parameter - Methoda
 		
 	}
 }
