@@ -1,0 +1,30 @@
+package dk.rosenheim.java;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("I CAN PRINT STUFF !");
+		
+		// I AM A COMMENT !
+		/*
+		 * I AM A
+		 * LONGER COMMENT
+		 */
+		
+		// Typer
+		/* 
+		 * Int, String, Bool, Boolean, float, Array, Double
+		 */
+		
+		// Examples on variables
+		
+		int tal, tal2, sum;
+		tal = 55;
+		tal2 = 33;
+		sum = tal + tal2;
+		System.out.println(sum);
+		
+		// Priavte, local and global variables - Aka. Scope
+		
+	}
+}

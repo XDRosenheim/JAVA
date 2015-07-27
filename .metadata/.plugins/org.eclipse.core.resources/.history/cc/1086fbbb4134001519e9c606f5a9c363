@@ -1,0 +1,27 @@
+package dk.rosenheim.java;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("I CAN PRINT STUFF !");
+		
+		// I AM A COMMENT !
+		/*
+		 * I AM A
+		 * LONGER COMMENT
+		 */
+		
+		// Typer
+		/* 
+		 * Int, String, Bool, Boolean, float, Array, Double
+		 */
+		
+		// Examples on variables
+		
+		int tal;
+		tal = 55;
+		
+		
+	}
+}
