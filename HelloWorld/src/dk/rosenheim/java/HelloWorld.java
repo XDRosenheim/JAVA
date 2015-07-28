@@ -53,13 +53,11 @@ public class HelloWorld {
         int result = i * 2;
         return result;
     }
-
     static int sumHalf(int i){
         int result = i / 2;
         return result;
     }
-
-    public static void echo(String S){
+    private static void echo(String S){
         out.println(S);
     }
 }
