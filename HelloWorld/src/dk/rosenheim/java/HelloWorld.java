@@ -1,23 +1,16 @@
 package dk.rosenheim.java;
-
 import java.util.Scanner;
 import java.lang.System;
-
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("I CAN PRINT STUFF !");
         echo("I CAN ECHO STUFF!");
+
         // I AM A COMMENT !
-        /*
-         * I AM A
-         * LONGER COMMENT
-         */
-
+        /*  I AM A
+            LONGER COMMENT */
         // Typer
-        /*
-         * Int, String, Bool, Boolean, float, Array, Double
-         */
-
+        // Int, String, Bool, Boolean, float, Array, DoubleS
         // Examples on variables
 
         int tal = 55;
