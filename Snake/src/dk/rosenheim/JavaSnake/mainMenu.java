@@ -10,7 +10,7 @@ public class mainMenu {
             IHateLongCommands.echo("##   Snake   ##");
             IHateLongCommands.echo("[1] Start game.");
             IHateLongCommands.echo("[2] Options.");
-            IHateLongCommands.echo("[3] Exit.");
+            IHateLongCommands.echo("[0] Exit.");
             IHateLongCommands.echo("");
             IHateLongCommands.echo("Selection: ");
             Scanner scanner = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class mainMenu {
                     // TODO Run game!
                     break;
                 case 2:
-                    // TODO Run config screen
+                    Config.main();
                     break;
                 case 3:
                     System.exit(0); //Kill game
