@@ -4,52 +4,68 @@ import java.util.Scanner;
 import java.lang.System;
 
 public class HelloWorld {
+        public static void main(String[] args) {
+                System.out.println("I CAN PRINT STUFF !");
+                
+                // I AM A COMMENT !
+                /*
+                 * I AM A
+                 * LONGER COMMENT
+                 */
 
-	public static void main(String[] args) {
-        System.out.println("I CAN PRINT STUFF !");
+                // Typer
+                /*
+                 * Int, String, Bool, Boolean, float, Array, Double
+                 */
 
-        // I AM A COMMENT !
-		/*
-		 * I AM A
-		 * LONGER COMMENT
-		 */
+                // Examples on variables
 
-        // Typer
-		/* 
-		 * Int, String, Bool, Boolean, float, Array, Double
-		 */
+                int tal, tal2, sum;
+                tal = 55;
+                tal2 = 33;
+                sum = tal + tal2;
+                System.out.println(sum);
 
-        // Examples on variables
+                // Priavte, local and global variables - Aka. Scope
 
-        int tal, tal2, sum;
-        tal = 55;
-        tal2 = 33;
-        sum = tal + tal2;
-        System.out.println(sum);
+                // TODO Parameter, pointer, constant/const
+                // Parameter - Methods
+                // const - Variable can't change.
 
-        // Priavte, local and global variables - Aka. Scope
+                Scanner scanner = new Scanner(System.in);
+                String myText = scanner.next();
 
-        // TODO Parameter, pointer, constant/const
-        // Parameter - Methods
-        // const - Variable can't change.
+                System.out.println("Text: " + myText + " Adams.");
+                scanner.close();
 
-        Scanner scanner = new Scanner(System.in);
-        String myText = scanner.next();
+                int a = 10, b = 20;
+                if (a == 10) {
+                        System.out.println("True!");
+                }
 
-        System.out.println("Text: " + myText + " Adams.");
-        scanner.close();
+                if (b < 1000 && b > 10) {
+                        System.out.println("True!");
+                }
 
-        int a = 10, b = 20, c = 30;
-        if (a == 10) {
-            System.out.println("True!");
+                for (int i = 10; i > 5; i--) {
+                        System.out.println(i);
+                }
+
+                int sumdouble = sumDouble(sum);
+                System.out.println(sumdouble);
+
+                int sumhalf = sumHalf(sum);
+                System.out.println(sumhalf);
+
         }
 
-        if (b < 1000 && b > 10) {
-            System.out.println("True!");
+        public static int sumDouble(int i){
+                int result = i * 2;
+                return result;
         }
 
-        for (int i = 10; i > 5; i--) {
-            System.out.println(i);
+        static int sumHalf(int i){
+                int result = i / 2;
+                return result;
         }
-    }
 }
