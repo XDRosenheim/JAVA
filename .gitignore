@@ -43,3 +43,4 @@ Temporary Items
 .apdisk
 /MyApp1/nbproject/private/
 /AddressBook/nbproject/private/
+*/.idea/*
