@@ -1,6 +1,7 @@
 package dk.rosenheim.java;
 import java.util.Scanner;
 import java.lang.System;
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("I CAN PRINT STUFF !");
@@ -16,7 +17,19 @@ public class HelloWorld {
         int tal = 55;
         int tal2 = 33;
         int sum = tal + tal2;
-        System.out.println(sum);
+        System.out.println(tal + " + " + tal2 + " = " + sum);
+
+        int sumdouble = sumDouble(sum); //Lav int, value = result fra "sumDouble"
+        echo("Doubled: " + sumdouble);  //Print that shit.
+
+        int sumhalf = sumHalf(sum);     //Lav int, value = result fra "sumHalf"
+        echo("Halfed: " + sumhalf);     //Print that shit.
+
+        int sumSquared = squared(sum);
+        echo("squared: " + sumSquared);
+
+        int sumCubed = cubed(sum);
+        echo("Cubed: " + sumCubed);
 
         // Priavte, local and global variables - Aka. Scope
 
@@ -41,23 +54,25 @@ public class HelloWorld {
         for (int i = 10; i > 5; i--) {
             System.out.println(i);
         }
-
-        int sumdouble = sumDouble(sum); //Lav int, value = result fra "sumDouble"
-        System.out.println(sumdouble);         //Print that shit.
-
-        int sumhalf = sumHalf(sum);     //Lav int, value = result fra "sumHalf"
-        System.out.println(sumhalf);           //Print that shit.
     }
 
-    public static int sumDouble(int i){
+    private static int sumDouble(int i){
         int result = i * 2;
         return result;
     }
-    static int sumHalf(int i){
+    private static int sumHalf(int i){
         int result = i / 2;
         return result;
     }
+    private static int squared(int i){
+        int result = i * i;
+        return result;
+    }
+    private static int cubed(int i){
+        int result = (i * i) * i;
+        return result;
+    }
     private static void echo(String S){
-        out.println(S);
+        System.out.println(S);
     }
 }
