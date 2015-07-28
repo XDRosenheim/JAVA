@@ -22,6 +22,6 @@ public class Player {
                 }
             }
         }
-        System.out.println("-- Go to game --");
+        System.out.println("-- Launch game here --");
     }
 }
