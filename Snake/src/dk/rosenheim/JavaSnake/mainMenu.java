@@ -5,14 +5,30 @@ import java.util.Scanner;
 public class mainMenu {
     public static void main(String[] args){
         while (true){
-            int selection = 0;
+            options.clearConsole();
+            int selection;
             IHateLongCommands.echo("##   Snake   ##");
             IHateLongCommands.echo("[1] Start game.");
             IHateLongCommands.echo("[2] Options.");
             IHateLongCommands.echo("[3] Exit.");
             IHateLongCommands.echo("");
             IHateLongCommands.echo("Selection: ");
-            int scanner = Scanner.next();
+            Scanner scanner = new Scanner(System.in);
+            selection = scanner.nextInt();
+
+            switch (selection){
+                case 1:
+                    // TODO Run game!
+                    break;
+                case 2:
+                    // TODO Run config screen
+                    break;
+                case 3:
+                    System.exit(0); //Kill game
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
