@@ -7,6 +7,15 @@ public class HelloWorld {
         System.out.println("I CAN PRINT STUFF !");
         echo("I CAN ECHO STUFF!");
 
+        Person p;
+        p = new Person("Patrick");
+
+        System.out.println(p);
+
+        Hat hat = new Hat();
+        System.out.println(hat.tekst);
+        hat.hans(5);
+
         // I AM A COMMENT !
         /*  I AM A
             LONGER COMMENT */
@@ -16,18 +25,15 @@ public class HelloWorld {
 
         int tal = 55;
         int tal2 = 33;
-        int sum = tal + tal2;
+        int sum = tal + tal2;  // sum = tal(55) + tal2(33) === 88
         System.out.println(tal + " + " + tal2 + " = " + sum);
 
         int sumdouble = sumDouble(sum); //Lav int, value = result fra "sumDouble"
         echo("Doubled: " + sumdouble);  //Print that shit.
-
         int sumhalf = sumHalf(sum);     //Lav int, value = result fra "sumHalf"
         echo("Halfed: " + sumhalf);     //Print that shit.
-
         int sumSquared = squared(sum);
         echo("squared: " + sumSquared);
-
         int sumCubed = cubed(sum);
         echo("Cubed: " + sumCubed);
 
