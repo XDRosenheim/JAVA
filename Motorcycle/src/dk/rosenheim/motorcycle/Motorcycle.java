@@ -35,5 +35,15 @@ public class Motorcycle {
 		return this.name;
 	}
 
-	public setRpm()
+	public setRpm(int rpm){
+		if (rpm > 8000){
+			this.rpm = 8000;
+		}
+		else if (rpm < 1000){
+			stop();
+		}
+		else {
+			this.rpm = rpm;
+		}
+	}
 }
