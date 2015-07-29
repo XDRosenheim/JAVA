@@ -7,10 +7,8 @@ public class HelloWorld {
         System.out.println("I CAN PRINT STUFF !");
         echo("I CAN ECHO STUFF!");
 
-
         Person pName = new Person("Patrick");
         Person pAge = new Person(99);
-
         System.out.println(pName.navn + " " + pAge.age);
 
         Hat hat = new Hat();
@@ -18,16 +16,16 @@ public class HelloWorld {
         hat.hans(5);
 
         // I AM A COMMENT !
-        /* I AM A
-         * LONGER COMMENT
-        */
+        // I AM A
+        // LONGER COMMENT
+        //
         // Typer
         // Int, String, Bool, Boolean, float, Array, DoubleS
         // Examples on variables
 
         int tal = 55;
         int tal2 = 33;
-        int sum = tal + tal2;  // sum = tal(55) + tal2(33) === 88
+        int sum = tal + tal2;  // sum = tal(55) + tal2(33). sum = 88
         System.out.println(tal + " + " + tal2 + " = " + sum);
 
         int sumdouble = sumDouble(sum); //Lav int, value = result fra "sumDouble"
@@ -41,7 +39,7 @@ public class HelloWorld {
 
         // Priavte, local and global variables - Aka. Scope
 
-        // TODO Parameter, pointer, constant/const
+        //
         // Parameter - Methods
         // const - Variable can't change.
 
@@ -64,23 +62,23 @@ public class HelloWorld {
         }
     }
 
-    private static int sumDouble(int i){
+    static int sumDouble(int i){
         int result = i * 2;
         return result;
     }
-    private static int sumHalf(int i){
+    static int sumHalf(int i){
         int result = i / 2;
         return result;
     }
-    private static int squared(int i){
+    static int squared(int i){
         int result = i * i;
         return result;
     }
-    private static int cubed(int i){
+    static int cubed(int i){
         int result = (i * i) * i;
         return result;
     }
-    private static void echo(String S){
+    static void echo(String S){
         System.out.println(S);
     }
 }
