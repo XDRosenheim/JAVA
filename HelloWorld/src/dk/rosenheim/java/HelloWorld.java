@@ -4,9 +4,9 @@ import java.lang.System;
 
 public class HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("I CAN PRINT STUFF !");
+		System.out.println("I CAN PRINT STUFF!");
 		echo("I AM BETTER THAT PRINTLN, I CAN ECHO STUFF!");
-		
+
 		Person pName = new Person("Patrick");
 		Person pAge = new Person(99);
 		System.out.println(pName.navn + " " + pAge.age);
