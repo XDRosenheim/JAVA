@@ -26,7 +26,7 @@ public class Config {
 
             switch (selection) {
                 case 1:
-                    playerName = Player.main();
+                    Player.main();
                     break;
                 case 2:
                     //Config.size(); //TODO Make "size" in Config class
