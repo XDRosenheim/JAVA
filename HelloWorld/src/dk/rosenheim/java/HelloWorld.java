@@ -7,18 +7,20 @@ public class HelloWorld {
         System.out.println("I CAN PRINT STUFF !");
         echo("I CAN ECHO STUFF!");
 
-        Person p;
-        p = new Person("Patrick");
 
-        System.out.println(p);
+        Person pName = new Person("Patrick");
+        Person pAge = new Person(99);
+
+        System.out.println(pName.navn + " " + pAge.age);
 
         Hat hat = new Hat();
         System.out.println(hat.tekst);
         hat.hans(5);
 
         // I AM A COMMENT !
-        /*  I AM A
-            LONGER COMMENT */
+        /* I AM A
+         * LONGER COMMENT
+        */
         // Typer
         // Int, String, Bool, Boolean, float, Array, DoubleS
         // Examples on variables
