@@ -12,9 +12,7 @@ public class Main {
 			try {
 				System.out.println("How many number do you want in the array?");
 				int arraySize = input.nextInt();
-
 				numbers = new int[arraySize];
-
 				break;
 			} catch(Exception e) {
 				System.out.println("Only numbers, mate.");
@@ -35,11 +33,10 @@ public class Main {
 	    }
 	    higheast = numbers[0];
 	    loweast = numbers[0];
-	    for(int i = 0; i < numbers.length; i++) {
-		    if(loweast > numbers[i]) loweast = numbers[i];
-		    else if(higheast < numbers[i]) higheast = numbers[i];
-
-		    sum = sum + numbers[i];
+	    for(int i : numbers) {
+		    if(loweast > i) loweast = i;
+		    else if(higheast < i) higheast = i;
+		    sum = sum + i;
 	    }
 	    avg = sum / numbers.length;
 	    System.out.println("Highest number in array: " + higheast);
