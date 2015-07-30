@@ -6,12 +6,20 @@ public class Motorcycle {
 	public String name;
 	public Boolean started;
 
-	public void motorcycle(Boolean started, int rpm, int gear, String name) {
-		this.rpm = rpm;
-		this.gear = gear;
-		this.started = started;
-		this.name = name;
+	public void motorcycle(){
+		this.name = "";
+		this.started = false;
+		this.gear = 0;
+		this.rpm = 0;
 	}
+	public void motorcycle(Boolean started, String name) {
+		this.name = name;
+		this.started = started;
+		this.gear = 0;
+		if(started) this.rpm = 1000;
+		else this.rpm = 0;
+	}
+
 
 	// Start and stop
 	public void start() {
