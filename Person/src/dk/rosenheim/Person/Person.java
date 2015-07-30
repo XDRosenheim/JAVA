@@ -52,7 +52,7 @@ public class Person {
 		return this.weight / (this.height * 2);
 	}
 
-	// PRINT ALL THE THINGS! ?( ?° ?? ?° )?
+	// PRINT ALL THE THINGS!
 	@Override
 	public String toString(){
 		System.out.println("Name:   " + this.name);
